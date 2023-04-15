@@ -29,7 +29,9 @@
                 //   $data=htmlspecialchars($data);
                 return $data;
             }
-            $malops=$tenlops=$sisos="";
+            $malops= "";
+            $tenlops= "";
+            $sisos="";
             $malopErr=$tenlopErr=$sisoErr="";
             if($_SERVER['REQUEST_METHOD']=='POST'){
 
@@ -47,9 +49,6 @@
                 }
                 else{
                     $tenlops=test_input($tenlop);
-                    if(!preg_match('/^[A-Z0-9]$/',$tenlops)){
-                        $tenlopErr="<h6>Sai định dạng tên lớp</h6>";
-                    }
                 }
                 if(empty($siso)){
                     $sisoErr="<h6>Không được bỏ trống</h6>";

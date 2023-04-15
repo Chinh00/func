@@ -5,7 +5,7 @@
       {
         $dsn='mysql:host=localhost;dbname=tracnghiem2';
         $user='root';
-        $pass='root';
+        $pass='admin';
         $this->db=new PDO($dsn,$user,$pass,array(PDO::MYSQL_ATTR_INIT_COMMAND=>"SET NAMES utf8"));
       }
       //

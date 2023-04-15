@@ -37,9 +37,7 @@
                 }
                 else{
                     $mamons=test_input($mamon);
-                    if(!preg_match('/^[A-Z0-9]$/',$mamons)){
-                        $mamonErr="<h6>Sai định dạng mã môn</h6>";
-                    }
+                    
                 }
                 if(empty($tenmon)){
                     $tenmonErr="<h6>Không được bỏ trống</h6>";

@@ -7,6 +7,8 @@
   include "Model/ketqua.php";
   include "Model/class.phpmailer.php";
   session_start();
+date_default_timezone_set('Asia/Ho_Chi_Minh');
+
   
 ?>
 <!DOCTYPE html>

@@ -1,4 +1,6 @@
 <?php 
+date_default_timezone_set('Asia/Ho_Chi_Minh');
+
   $action="giaovien";
   if(isset($_GET['act']))
   {
@@ -75,6 +77,7 @@
         break;
         
       case "update_timer":
+
           $id=$_POST['id'];
           $date=$_POST['date'];
           $hour= $_POST['h'];
